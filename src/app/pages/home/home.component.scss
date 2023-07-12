@@ -1,0 +1,15 @@
+.shop{
+    display: flex;
+    justify-content: center;
+}
+.shop button{
+    color: white;
+    background-color: rgb(231, 129, 21);
+    margin: 1em;
+    padding: 0.6em;
+    border-radius: 0.5em;
+}
+.shop button:hover{
+    cursor: pointer;
+    background-color: black;
+}

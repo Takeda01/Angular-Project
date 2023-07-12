@@ -3,5 +3,44 @@ div{
     color: white;
     text-align: center;
     min-height: 3em;
+    display: flex;
+    width: 100%;
 }
+a{
+    color: white;
+    text-decoration: none;
+   
+}
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    padding-top: 1em;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:20%;
+}
+li{
+    text-align: start;
+    line-height: 1.8;
+}
+.line{
+    display: block;
+    align-self: flex-end;
+    justify-self: center;
+    width: 100%;
+    font-size: 12px;
     
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    flex-direction: column;
+}
+
+   
