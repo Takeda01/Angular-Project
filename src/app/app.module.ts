@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './pages/home/home.component';
 import { PagesModule } from './pages/pages.module';
+import { StaticModule } from './static/static.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    PagesModule
+    PagesModule,
+    StaticModule
   ],
   providers: [],
   bootstrap: [AppComponent]

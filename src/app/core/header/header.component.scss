@@ -2,6 +2,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+   
 }
 li{
     list-style: none;
@@ -12,10 +13,10 @@ a{
     text-decoration: none;
     color: rgb(9, 14, 14);
 }
-a:hover{
+
+.head a:hover{
 text-decoration: underline;
 }
-
 
 ul{
     display: inline-block;
@@ -23,16 +24,24 @@ ul{
 }
 nav{
     justify-content: space-between;
+    margin-left: 1em;
 }
 .auth{
     float: right;
 }
 .auth li {
-    background-color: black;
+    background-color: rgb(24, 92, 251);
     color: white;
     padding: 0.4em;
     border-radius: 0.2em;
+   
     
+}
+.auth li:hover{
+    background-color: rgb(224, 219, 219);
+   a{
+    color: black
+   }
 }
 .auth a{
     color: white;

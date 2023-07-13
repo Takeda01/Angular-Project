@@ -5,10 +5,12 @@ import { SupplimentsComponent } from './suppliments/suppliments.component';
 
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
-    SupplimentsComponent
+    SupplimentsComponent,
+    
   ],
   imports: [
     CommonModule
