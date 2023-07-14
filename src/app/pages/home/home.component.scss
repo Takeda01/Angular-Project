@@ -3,13 +3,34 @@
     justify-content: center;
 }
 .shop button{
-    color: white;
-    background-color: rgb(231, 129, 21);
+   
+   
     margin: 1em;
     padding: 0.6em;
     border-radius: 0.5em;
+    width: 30%;
 }
 .shop button:hover{
     cursor: pointer;
+   
+}
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.equip{
     background-color: black;
+    color: white;
+   
+}
+.equip:hover{
+    background-color: white;
+    color: black;
+}
+.supp{
+    background-color: rgb(223, 216, 216);
+}
+.supp:hover{
+    color: white;
+    background-color: rgb(82, 78, 78);
 }
