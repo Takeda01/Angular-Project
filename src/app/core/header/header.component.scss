@@ -2,6 +2,8 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+   vertical-align: baseline;
+  
    
 }
 li{
@@ -20,11 +22,17 @@ text-decoration: underline;
 
 ul{
     display: inline-block;
-    
+
 }
 nav{
     justify-content: space-between;
-    margin-left: 1em;
+  
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+    padding-left: 1em;
+    
+
 }
 .auth{
     float: right;
@@ -42,6 +50,7 @@ nav{
    a{
     color: black
    }
+   cursor: pointer;
 }
 .auth a{
     color: white;
@@ -53,3 +62,4 @@ nav{
     font-weight: 600;
     box-shadow: -3px 7px 14px -4px rgba(0,0,0,0.75);
 }
+

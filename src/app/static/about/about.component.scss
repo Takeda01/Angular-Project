@@ -1,0 +1,61 @@
+.about{
+    h1{
+        
+        margin-left: 3%;
+    }
+
+   
+    color: white;
+    background-color: rgb(249, 68, 13);
+    padding: 1em;
+
+
+   
+
+    
+}
+img{
+    width: 30%;
+   display: inline-block;
+}
+.mission div{
+
+    display: inline-block;
+
+}
+.mission{
+    display: flex;
+    div{
+      
+    
+    }
+    h2{
+        padding-left: 1em;
+        color: white;
+    }
+    background-color: rgb(30, 195, 201); 
+}
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: 60%;
+       margin-left: 3%;
+}
+.container{
+margin: 0 auto;
+}
+.motivation{
+    display: flex;
+    h2{
+        padding-left: 1em;
+        color: white;
+    }
+    background-color:  rgb(249, 68, 13);;
+    padding: 1em;
+    div{
+        display: inline-block;
+    }
+    p{
+        width: 80%;
+    }
+}
