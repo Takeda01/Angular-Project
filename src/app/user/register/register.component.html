@@ -1,0 +1,68 @@
+<div class="container">
+  <form class="register" #form="ngForm">
+    <fieldset>
+      <h2>Sign Up</h2>
+
+      <div class="input">
+        <label for="username">Name</label>
+        <input
+          type= "text"
+          name="username"
+          id="username"
+          placeholder="John"
+          ngModel
+          required
+          #InputName
+          [(ngModel)]="signUpObj.Name"
+        />
+      </div>
+      <div class="input">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="johnhanks@gmail.com"
+          #InputEmail
+          ngModel
+          required
+          [(ngModel)]="signUpObj.email"
+          
+        />
+      </div>
+
+      <div class="input">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+          ngModel
+          required
+          #InputPass
+          [(ngModel)]="signUpObj.password"
+        />
+      </div>
+
+      <div class="input">
+        <label for="rePassword">Confirm password</label>
+        <input
+          type="password"
+          name="rePassword"
+          id="rePassword"
+          placeholder="password"
+          ngModel
+          required
+          #InputRePass
+        />
+      </div>
+      <button (click)="OnSignUp(InputName, InputEmail, InputPass, InputRePass)">Sign Up</button>
+
+      <p class="text-center">
+        Have an account?
+        <a href="#">Log In</a>
+      </p>
+    </fieldset>
+  </form>
+</div>

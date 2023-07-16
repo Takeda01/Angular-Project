@@ -7,6 +7,8 @@ import { CoreModule } from './core/core.module';
 import { HomeComponent } from './pages/home/home.component';
 import { PagesModule } from './pages/pages.module';
 import { StaticModule } from './static/static.module';
+import { UserModule } from './user/user.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { StaticModule } from './static/static.module';
     AppRoutingModule,
     CoreModule,
     PagesModule,
-    StaticModule
+    StaticModule,
+    UserModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
