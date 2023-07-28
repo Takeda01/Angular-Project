@@ -10,6 +10,7 @@ import { StaticModule } from './static/static.module';
 import { UserModule } from './user/user.module';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,4 +28,6 @@ import { FormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }
