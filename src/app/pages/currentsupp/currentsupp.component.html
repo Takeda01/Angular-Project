@@ -1,0 +1,12 @@
+
+<div class="container">
+    <div class="item-details" *ngIf="item">
+        <img [src]="Photo(item)" alt="Product Image">
+        <h1>{{item.Name}}</h1>
+        <p>Brand: {{item.brand}}</p>
+        <p>Description: {{item.Description}}</p>
+        <p>Price: ${{item.Price}}</p>
+        <button>Add to Cart</button>
+       
+    </div>
+</div>

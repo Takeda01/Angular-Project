@@ -27,7 +27,7 @@ this.router.navigate(['/equipment'])
   }
 
   Sup(){
-    this.router.navigate(['/suppliments'])
+    this.router.navigate(['/supplements'])
   }
 ArticleImage(a: Article): string{
 return `../../../assets/ArticlePhotos/article${Number(a.id)}.jpg`

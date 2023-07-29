@@ -1,0 +1,19 @@
+<section class="container">
+<div class="card" *ngFor="let s of supplemets">
+<img [src]="SuppPhoto(s)" alt="">
+<div>
+    <h3>
+       {{s.Name}}
+    </h3>
+    <p>
+       {{ s.brand }}
+    </p>
+
+    <p>
+        {{s.Price}}€
+    </p>
+
+    <button [routerLink]="s._id">Purchase</button>
+</div>
+</div>
+</section>

@@ -4,6 +4,8 @@ import { ContactsComponent } from '../static/contacts/contacts.component';
 import { AboutComponent } from '../static/about/about.component';
 import { SupportComponent } from '../static/support/support.component';
 import { TermsComponent } from '../static/terms/terms.component';
+import { SupplementsComponent } from '../pages/supplements/supplements.component';
+import { EquipmentComponent } from '../pages/equipment/equipment.component';
 
 
 
@@ -11,7 +13,9 @@ const routes: Routes = [
     {path: 'contacts', component: ContactsComponent},
     {path: 'about', component: AboutComponent},
     {path: 'support', component: SupportComponent},
-    {path: 'terms&conditions', component: TermsComponent}
+    {path: 'terms&conditions', component: TermsComponent},
+    {path: 'supplements', component: SupplementsComponent},
+    {path: 'equipment', component: EquipmentComponent}
   
   
 ];

@@ -1,0 +1,19 @@
+<section class="container" >
+    <div class="card" *ngFor="let e of equipment" >
+    <img [src]="EquPhoto(e)" alt="">
+    <div>
+        <h3>
+           {{e.EqName}}
+        </h3>
+        <p>
+          {{e.EqBrand}}
+        </p>
+    
+        <p>
+           {{e.EqPrice}}
+        </p>
+
+        <button [routerLink]="e._id">Purchase</button>
+    </div>
+    </div>
+    </section>
