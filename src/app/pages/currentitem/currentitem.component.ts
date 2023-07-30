@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Supplement } from 'src/app/types/supplement';
 import { ApiService } from '../api.service';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-currentitem',
@@ -15,7 +16,7 @@ item: Supplement | undefined
 
 
 
-constructor(private api: ApiService, private activeRoute: ActivatedRoute) {
+constructor(private api: ApiService, private activeRoute: ActivatedRoute, private cartService: CartService) {
  
   
 }
@@ -40,5 +41,9 @@ this.api.GetItem(id).subscribe((item) => {
 }
 Photo(item: Supplement): string{
 return `../../../assets/EquipmentPhotos/equipment${item.EqId}.jpg`
+}
+
+Add(item:Supplement){
+this.cartService.AddItem(item)
 }
 }

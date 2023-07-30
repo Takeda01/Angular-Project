@@ -6,6 +6,7 @@ import { SupportComponent } from '../static/support/support.component';
 import { TermsComponent } from '../static/terms/terms.component';
 import { SupplementsComponent } from '../pages/supplements/supplements.component';
 import { EquipmentComponent } from '../pages/equipment/equipment.component';
+import { CartComponent } from '../pages/cart/cart.component';
 
 
 
@@ -15,7 +16,8 @@ const routes: Routes = [
     {path: 'support', component: SupportComponent},
     {path: 'terms&conditions', component: TermsComponent},
     {path: 'supplements', component: SupplementsComponent},
-    {path: 'equipment', component: EquipmentComponent}
+    {path: 'equipment', component: EquipmentComponent},
+    {path: 'cart', component: CartComponent}
   
   
 ];

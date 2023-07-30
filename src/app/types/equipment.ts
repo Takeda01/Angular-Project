@@ -1,7 +1,7 @@
 export interface Equipment{
     EqId: Number,
     EqName:string,
-    EqPrice: Number,
+    EqPrice: number,
     EqMaterial: string,
     EqType: string,
     EqBrand: string

@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 
-import { Article } from 'src/app/types/article';
+import { Article } from '../../types/article';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -10,6 +10,7 @@ import { ApiService } from '../api.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit  {
   
   constructor(private router: Router, private api: ApiService) {}
@@ -30,7 +31,7 @@ this.router.navigate(['/equipment'])
     this.router.navigate(['/supplements'])
   }
 ArticleImage(a: Article): string{
-return `../../../assets/ArticlePhotos/article${Number(a.id)}.jpg`
+return `../../../assets/ArticlePhotos/article${a.id}.jpg`
 }
 }
 

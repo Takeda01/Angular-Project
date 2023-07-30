@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { ActivatedRoute } from '@angular/router';
 import { Supplement } from 'src/app/types/supplement';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-currentsupp',
@@ -13,7 +14,7 @@ export class CurrentsuppComponent implements OnInit {
 /**
  *
  */
-constructor(private api: ApiService, private activeRoute: ActivatedRoute) {
+constructor(private api: ApiService, private activeRoute: ActivatedRoute, private cartService: CartService) {
   
   
 }
@@ -43,5 +44,7 @@ this.item = item
 Photo(item: Supplement): string{
 return `../../../assets/SupplementsPhotos/supplement${item.id}.jpg`
 }
-
+Add(item:Supplement){
+  this.cartService.AddItem(item)
+}
 }

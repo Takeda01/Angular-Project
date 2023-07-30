@@ -1,6 +1,6 @@
 export interface Supplement{
     Name: string,
-    Price: Number,
+    Price: number,
     Description: string,
     brand: string,
     grams: Number,
@@ -8,7 +8,7 @@ export interface Supplement{
     _id: string,
     EqId: Number,
     EqName:string,
-    EqPrice: Number,
+    EqPrice: number,
     EqMaterial: string,
     EqType: string,
     EqBrand: string

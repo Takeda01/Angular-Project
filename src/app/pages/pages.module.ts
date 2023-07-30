@@ -13,6 +13,7 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { CurrentitemComponent } from './currentitem/currentitem.component';
 import { CurrentsuppComponent } from './currentsupp/currentsupp.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -26,6 +27,7 @@ import { CurrentsuppComponent } from './currentsupp/currentsupp.component';
     EquipmentComponent,
     CurrentitemComponent,
     CurrentsuppComponent,
+    CartComponent,
     
   ],
   imports: [
