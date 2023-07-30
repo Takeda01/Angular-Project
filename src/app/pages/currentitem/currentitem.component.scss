@@ -1,8 +1,8 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+   max-width: 70%;
+    
     padding: 1.2em;
-    border: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .item-details {
@@ -16,7 +16,7 @@ img {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0.7em;
 }
 
@@ -33,4 +33,54 @@ button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.others{
+    max-width: 30%;
+   float: right;
+   padding-left: 4em;
+   align-self: center;
+  
+img{
+    max-width: 30%;
+    transform-origin: 0 0;
+ 
+
+}
+
+.product{
+    margin-top: 5em;
+    transition: transform .2s;
+    margin-left: 6em;
+   
+}
+h2{
+    margin-left: 4em;
+}
+.product:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+}
+
+
+.bigcontainer{
+    width: 100%;
+   
+  
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+.container {
+   width: 60%;
+ 
+    padding: 1.2em;
+   border-right: 1px solid black;
+   
+   
 }

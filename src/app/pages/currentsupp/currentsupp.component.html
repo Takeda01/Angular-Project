@@ -1,3 +1,4 @@
+<div class="bigcontainer">
 
 <div class="container">
     <div class="item-details" *ngIf="item">
@@ -5,8 +6,21 @@
         <h1>{{item.Name}}</h1>
         <p>Brand: {{item.brand}}</p>
         <p>Description: {{item.Description}}</p>
-        <p>Price: ${{item.Price}}</p>
+        <p>{{item.grams}}g</p>
+        <p>Price: {{item.Price}} €</p>
         <button>Add to Cart</button>
        
     </div>
+</div>
+
+<div class="others">
+    <h2>Other products:</h2>
+    <section class="product" *ngFor="let product of products">
+        <div >
+        <img [src]="Photo(product)" alt="Product Image">
+        <h3>{{product.Name}}</h3>
+    </div>
+    </section>
+</div>
+
 </div>

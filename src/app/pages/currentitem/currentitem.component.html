@@ -1,11 +1,21 @@
 
-<div class="container">
-    <div class="item-details" *ngIf="item">
+<div class="bigcontainer">
+    <div class="item-details container" *ngIf="item">
         <img [src]="Photo(item)" alt="Product Image">
         <h2>{{item.EqName}}</h2>
         <p>Brand: {{item.EqBrand}}</p>
         <p>Material: {{item.EqMaterial}}</p>
-        <p>Price: ${{item.EqPrice}}</p>
+        <p>Price: {{item.EqPrice}} €</p>
         <button>Add to Cart</button>
+    </div>
+
+    <div class="others">
+        <h2>Other products:</h2>
+        <section class="product" *ngFor="let product of products">
+            <div >
+            <img [src]="Photo(product)" alt="Product Image">
+            <h3>{{product.EqName}}</h3>
+        </div>
+        </section>
     </div>
 </div>

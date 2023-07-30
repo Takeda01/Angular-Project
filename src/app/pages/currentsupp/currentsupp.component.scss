@@ -1,14 +1,29 @@
-.container {
-    max-width: 800px;
+.bigcontainer{
+    width: 100%;
+   
+  
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+.container {
+   width: 60%;
+   margin-left: 2em;
     padding: 1.2em;
-    border: 1px solid black;
+   border-right: 1px solid black;
+    height: 70%;
+   
 }
 
 .item-details {
     text-align: center;
 }
 
+.container {
 img {
     max-width: 100%;
     height: auto;
@@ -33,4 +48,40 @@ button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+   
+}
+padding-right: 1em;
+}
+
+
+.others{
+    max-width: 30%;
+   float: right;
+   padding-left: 4em;
+   align-self: center;
+  
+img{
+    max-width: 30%;
+    transform-origin: 0 0;
+ 
+
+}
+
+.product{
+    margin-top: 5em;
+    transition: transform .2s;
+    margin-left: 6em;
+   
+}
+h2{
+    margin-left: 4em;
+}
+.product:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 }
