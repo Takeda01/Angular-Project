@@ -33,13 +33,13 @@ nav{
     border-bottom: 2px solid black;
     padding-left: 1em;
     background-color: rgb(227, 229, 231);
-    margin-bottom: 4em;
+    
     
 
 }
 .auth{
     float: right;
-   margin-bottom: 2em;
+ 
 }
 .auth li {
     background-color: rgb(24, 92, 251);
@@ -68,15 +68,25 @@ nav{
     font-weight: 600;
     box-shadow: -3px 7px 14px -4px rgba(0,0,0,0.75);
 }
-#cart,svg{
+svg{
     max-width: 50px;
     max-height: 30px;
     fill: black;
     background-color: rgb(227, 229, 231) ;
+    margin-right: 1em;
+    list-style-type: none;
+    outline: none;
 }
 #a{
    padding: 0.4em;
   
+}
+svg:hover{
+    cursor: pointer;
+    border: none;
+}
+.profile{
+   
 }
 
 

@@ -7,6 +7,7 @@ import { TermsComponent } from '../static/terms/terms.component';
 import { SupplementsComponent } from '../pages/supplements/supplements.component';
 import { EquipmentComponent } from '../pages/equipment/equipment.component';
 import { CartComponent } from '../pages/cart/cart.component';
+import { UserInfoComponent } from '../user/user-info/user-info.component';
 
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
     {path: 'terms&conditions', component: TermsComponent},
     {path: 'supplements', component: SupplementsComponent},
     {path: 'equipment', component: EquipmentComponent},
-    {path: 'cart', component: CartComponent}
+    {path: 'cart', component: CartComponent},
+    {path: 'profile', component: UserInfoComponent}
   
   
 ];

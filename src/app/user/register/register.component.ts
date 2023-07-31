@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {NgForm} from '@angular/forms'
 import{DEFAULT_DOMAINS} from '../../shared/constants'
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-register',
@@ -10,20 +11,14 @@ import{DEFAULT_DOMAINS} from '../../shared/constants'
 export class RegisterComponent {
 
   domains =  DEFAULT_DOMAINS
-  signUpUsers : any[] = []
-signUpObj: any = {
-  Name: "",
-  email: "",
-  password: ""
+ 
+constructor( private authService: AuthService) {
+
+  
 }
 
 OnSignUp(name: HTMLInputElement,email: HTMLInputElement, pass: HTMLInputElement, RePass: HTMLInputElement){
-  this.signUpUsers.push(this.signUpObj)
-  localStorage.setItem('signUpUsers', JSON.stringify(this.signUpUsers))
-  name.value = ""
-  email.value = ""
-  pass.value = ""
-  RePass.value = ""
+  this.authService.SignUp(name,email,pass,RePass)
 }
 
 

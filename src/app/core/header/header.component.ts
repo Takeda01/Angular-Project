@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { ImplicitReceiver } from '@angular/compiler';
+import { Component, OnInit } from '@angular/core';
 import { Router,Routes,  } from '@angular/router';
+import { AuthService } from 'src/app/user/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,8 +10,16 @@ import { Router,Routes,  } from '@angular/router';
 })
 export class HeaderComponent {
 
-constructor(private router: Router) {
+constructor(private router: Router, private auth: AuthService) {
 
   
 }
+authenticated: boolean = this.auth.Indicator()
+  
+  
+
+
+
+
+
 }

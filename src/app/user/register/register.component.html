@@ -13,7 +13,7 @@
           ngModel
           required
           #InputName
-          [(ngModel)]="signUpObj.Name"
+         
         />
       </div>
       <div class="input">
@@ -26,7 +26,7 @@
           #InputEmail
           ngModel
           required
-          [(ngModel)]="signUpObj.email"
+          
           
         />
       </div>
@@ -41,7 +41,7 @@
           ngModel
           required
           #InputPass
-          [(ngModel)]="signUpObj.password"
+          
         />
       </div>
 
@@ -61,7 +61,7 @@
 
       <p class="text-center">
         Have an account?
-        <a href="#">Log In</a>
+        <a routerLink="/signin">Log In</a>
       </p>
     </fieldset>
   </form>

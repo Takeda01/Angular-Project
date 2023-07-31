@@ -1,1 +1,41 @@
-<p>login works!</p>
+<div class="container">
+    <form class="login" #form="ngForm">
+      <fieldset>
+        <h2>Log In</h2>
+  
+        
+        <div class="input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johnhanks@gmail.com"
+            #InputEmail
+            ngModel
+            required
+          />
+        </div>
+  
+        <div class="input">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            ngModel
+            required
+            #InputPass
+          />
+        </div>
+  
+        <button (click)="OnLogIn(InputEmail,InputPass)" >Log In</button>
+  
+        <p class="text-center">
+          Don't have an account?
+          <a routerLink="/signup">Sign Up</a>
+        </p>
+      </fieldset>
+    </form>
+  </div>

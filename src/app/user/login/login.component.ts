@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  /**
+   *
+   */
+  constructor(private authSevice: AuthService) {
+   
+    
+  }
 
+  OnLogIn(email:HTMLInputElement, pass: HTMLInputElement){
+this.authSevice.LogIn(email,pass)
+  }
 }

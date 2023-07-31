@@ -1,0 +1,76 @@
+.container {
+    background-color: rgb(241, 251, 251);
+  }
+  
+  form.login {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .login fieldset {
+    border-radius: 0.4em;
+    padding: 0.8em;
+    background-color: #007bff;
+  }
+  
+  .login h2 {
+    padding-top: 0;
+    border-bottom: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+  }
+  
+  .login p {
+    padding: 0;
+  }
+  
+  .login input {
+    flex: 0 1 100%;
+    border: 1px solid;
+    padding: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+  }
+  
+  .login button {
+    color: white;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.6em 1.2em;
+    margin-top: 1.5rem;
+    width: 60%;
+    outline: none;
+    background-color: black;
+  }
+  
+  .login a {
+    color: black;
+  }
+  
+  .login a:hover {
+    cursor: pointer;
+    color: wheat;
+  }
+  
+  .login .input {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+  
+    label {
+      align-self: flex-start;
+      color: white;
+    }
+  }
+  
+  .login button:hover {
+    color: #000;
+    background-color: #ffff;
+    cursor: pointer;
+  }
+  
+  input {
+    width: 90%;
+  }
+  
