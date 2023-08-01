@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../types/user';
 import { Route, Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,11 +12,12 @@ export class AuthService {
 
 LoggedUsers: User[] = []
 signUpUsers: User[] = [];
-bool:boolean = true
-  CurrentuUser!: User; 
-Indicator():boolean{
-return !this.bool;
-}
+private boolSubject = new BehaviorSubject<boolean>(false);
+  bool$ = this.boolSubject.asObservable();
+  private currentUserSubject = new BehaviorSubject<User | null>(null);
+  currentUser$ = this.currentUserSubject.asObservable();
+
+
 
   SignUp(name: HTMLInputElement, email: HTMLInputElement, pass: HTMLInputElement, RePass: HTMLInputElement) {
     // Form validation: Ensure fields are not empty
@@ -48,9 +50,9 @@ return !this.bool;
     email.value = '';
     pass.value = '';
     RePass.value = '';
-    setInterval(()=> {
+   
       this.router.navigate(['/signin'])
-    },1000)
+ 
    
   }
 
@@ -59,19 +61,19 @@ return !this.bool;
     if (IsUserExist) {
      
       
-        // this.CurrentuUser.Name =IsUserExist.Name
-        // this.CurrentuUser.password = IsUserExist.password
-        // this.CurrentuUser.email = IsUserExist.email
+      this.currentUserSubject.next(IsUserExist);
+
       
       this.LoggedUsers.push(IsUserExist)
+      debugger
     
 
-      this.bool = true
+      this.boolSubject.next(true);
       email.value = ""
       password.value = ""
-      setInterval(()=> {
+     
         this.router.navigate(['/home'])
-      },1000)
+  
       
     }
     else{
@@ -79,6 +81,7 @@ return !this.bool;
     }
   }
   LogOut(){
-   this.Indicator()
+    this.boolSubject.next(false);
+    this.router.navigate(['/home'])
   }
 }

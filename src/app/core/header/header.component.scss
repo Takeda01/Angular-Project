@@ -88,5 +88,23 @@ svg:hover{
 .profile{
    
 }
-
+@media(width < 950px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .home{
+            text-align: center;
+           
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            
+           }
+           .auth{
+           align-self: flex-end;
+           }
+    }
+}
 

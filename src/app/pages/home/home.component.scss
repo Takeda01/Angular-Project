@@ -72,3 +72,30 @@ font-family:Verdana, Geneva, Tahoma, sans-serif
 .articles{
     margin-left: 1em;
 }
+
+@media(width< 950px){
+    h1{
+        font-size: 1.4em;
+    }
+    article{
+        h3{
+            font-size: 0.9em;
+        }
+        p{
+            font-size: 0.6em;
+        }
+        button{
+            padding: 0.1em;
+        }
+        img{
+            max-width: 25%;
+            max-height: 30%;
+        }
+    }
+}
+
+@media(width<500px){
+    img{
+        min-width: 40%;
+    }
+}

@@ -26,5 +26,9 @@ export class CartComponent implements OnInit {
     }
   }
 
+  CheckOutDetails(){
+    
+  }
+
 }
 

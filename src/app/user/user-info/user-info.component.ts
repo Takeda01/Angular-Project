@@ -8,12 +8,14 @@ import { User } from 'src/app/types/user';
   styleUrls: ['./user-info.component.scss']
 })
 export class UserInfoComponent implements OnInit {
-  CurrentPatient!: User; 
+  CurrentPatient: User | null = null;
 constructor(private AuthService: AuthService) {
   
 }
   ngOnInit(): void {
-   this.CurrentPatient = this.AuthService.CurrentuUser
+    this.AuthService.currentUser$.subscribe((user) => {
+      this.CurrentPatient = user;
+    });
   }
   OnLogOut(){
     this.AuthService.LogOut()

@@ -9,12 +9,13 @@ import { AuthService } from 'src/app/user/auth.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  authenticated: boolean = false
+  constructor(private auth: AuthService) {
+    this.auth.bool$.subscribe((value) => {
+      this.authenticated = value;
+    });
+  }
 
-constructor(private router: Router, private auth: AuthService) {
-
-  
-}
-authenticated: boolean = this.auth.Indicator()
   
   
 
