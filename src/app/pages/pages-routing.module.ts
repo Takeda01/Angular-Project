@@ -4,6 +4,7 @@ import { SupplementsComponent } from '../pages/supplements/supplements.component
 import { EquipmentComponent } from '../pages/equipment/equipment.component';
 import { CurrentitemComponent } from './currentitem/currentitem.component';
 import { CurrentsuppComponent } from './currentsupp/currentsupp.component';
+import { CheckOutComponent } from './check-out/check-out.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,9 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'checkout', component: CheckOutComponent
+  }
 ];
 
 @NgModule({

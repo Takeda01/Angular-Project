@@ -1,0 +1,47 @@
+<div class="checkout-container">
+    <h2>Checkout</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" required (blur)="onFieldBlur('name')">
+        <div *ngIf="isFieldInvalid('name')" class="error-message">
+          Name should contain only alphabets.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" [(ngModel)]="city" required (blur)="onFieldBlur('city')">
+        <div *ngIf="isFieldInvalid('city')" class="error-message">
+          City should contain only alphabets.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="postcode">Post Code</label>
+        <input type="text" id="postcode" name="postcode" [(ngModel)]="postcode" required (blur)="onFieldBlur('postcode')">
+        <div *ngIf="isFieldInvalid('postcode')" class="error-message">
+          Post Code should contain only numbers.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="street">Street</label>
+        <input type="text" id="street" name="street" [(ngModel)]="street" required (blur)="onFieldBlur('street')">
+        <div *ngIf="isFieldInvalid('street')" class="error-message">
+          Street should contain only alphabets and numbers.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" [(ngModel)]="phoneNumber" required (blur)="onFieldBlur('phoneNumber')">
+        <div *ngIf="isFieldInvalid('phoneNumber')" class="error-message">
+          Phone Number should contain only numbers.
+        </div>
+      </div>
+  
+      <button type="submit" (click)="Submit()">Place Order</button>
+    </form>
+  </div>
+  

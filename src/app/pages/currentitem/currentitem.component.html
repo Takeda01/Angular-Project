@@ -12,7 +12,7 @@
     <div class="others">
         <h2>Other products:</h2>
         <section class="product" *ngFor="let product of products">
-            <div >
+            <div (click)="Nav(product._id)" >
             <img [src]="Photo(product)" alt="Product Image">
             <h3>{{product.EqName}}</h3>
         </div>

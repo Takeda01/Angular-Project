@@ -1,5 +1,7 @@
 .container{
     background-color: rgb(241, 251, 251);
+    margin-top: 3em;
+    margin-bottom: 10em;
 }
 
 form.register {
@@ -87,4 +89,8 @@ input{
         align-self: flex-start;
         color: white;
     }
+}
+
+.red{
+    color: rgb(232, 244, 9)
 }

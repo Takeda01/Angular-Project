@@ -14,6 +14,8 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { CurrentitemComponent } from './currentitem/currentitem.component';
 import { CurrentsuppComponent } from './currentsupp/currentsupp.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckOutComponent } from './check-out/check-out.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -28,12 +30,14 @@ import { CartComponent } from './cart/cart.component';
     CurrentitemComponent,
     CurrentsuppComponent,
     CartComponent,
+    CheckOutComponent,
     
   ],
   imports: [
     CommonModule,
   HttpClientModule,
-  PagesRoutingModule
+  PagesRoutingModule,
+  FormsModule
     
   ],
   exports: [

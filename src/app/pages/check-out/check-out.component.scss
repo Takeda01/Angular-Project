@@ -1,0 +1,56 @@
+$primary-color: #007bff;
+$secondary-color: #007bff;
+$border-color: #ccc;
+
+.checkout-container {
+  max-width: 25em;
+  margin: 0 auto;
+  padding: 1.25em;
+
+  h2 {
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 1.25em;
+  }
+
+  form {
+    .form-group {
+      margin-bottom: 0.9375em;
+
+      label {
+        font-weight: bold;
+        display: block;
+        color: $secondary-color;
+        margin-bottom: 0.3125em;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.625em;
+        border: 0.0625em solid $border-color;
+        border-radius: 0.3125em;
+        outline: none;
+      }
+    }
+
+    button[type="submit"] {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0.3125em;
+      padding: 0.625em 1.25em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+.error-message {
+    color: red;
+    font-size: 0.75em;
+    margin-top: 0.3125em;
+  }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Supplement } from 'src/app/types/supplement';
 import { ApiService } from '../api.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from '../cart.service';
 
 @Component({
@@ -16,7 +16,7 @@ item: Supplement | undefined
 
 
 
-constructor(private api: ApiService, private activeRoute: ActivatedRoute, private cartService: CartService) {
+constructor(private api: ApiService, private activeRoute: ActivatedRoute, private cartService: CartService, private router: Router) {
  
   
 }
@@ -46,4 +46,8 @@ return `../../../assets/EquipmentPhotos/equipment${item.EqId}.jpg`
 Add(item:Supplement){
 this.cartService.AddItem(item)
 }
+Nav(id:string){
+  this.router.navigate([`/equipment/${id}`])
+this.ngOnInit()
+  }
 }

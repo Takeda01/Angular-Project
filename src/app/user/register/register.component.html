@@ -6,16 +6,18 @@
       <div class="input">
         <label for="username">Name</label>
         <input
-          type= "text"
+          type="text"
           name="username"
           id="username"
           placeholder="John"
-          ngModel
+          [(ngModel)]="name"
           required
           #InputName
-         
+          (blur)="onFieldBlur('name')"
         />
+        <div class="red" *ngIf="isFieldInvalid('name')">Name should contain letters only.</div>
       </div>
+
       <div class="input">
         <label for="email">Email</label>
         <input
@@ -23,12 +25,12 @@
           name="email"
           id="email"
           placeholder="johnhanks@gmail.com"
-          #InputEmail
-          ngModel
+          [(ngModel)]="email"
           required
-          
-          
+          #InputEmail
+          (blur)="onFieldBlur('email')"
         />
+        <div class="red" *ngIf="isFieldInvalid('email')">Invalid email format.</div>
       </div>
 
       <div class="input">
@@ -38,11 +40,12 @@
           name="password"
           id="password"
           placeholder="password"
-          ngModel
+          [(ngModel)]="password"
           required
           #InputPass
-          
+          (blur)="onFieldBlur('password')"
         />
+        <div class="red" *ngIf="isFieldInvalid('password')">Password should be at least 6 characters long.</div>
       </div>
 
       <div class="input">

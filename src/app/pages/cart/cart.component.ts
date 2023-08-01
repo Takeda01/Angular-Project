@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Subject } from '../../types/subject';
 import { CartService } from '../cart.service';
 
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -9,7 +10,7 @@ import { CartService } from '../cart.service';
 })
 export class CartComponent implements OnInit {
   list: Subject[] = [];
-  total: number = 0; // Use lowercase 'number' here
+  total: number = 0; 
 
   constructor(private cartService: CartService) {}
 
@@ -19,7 +20,7 @@ export class CartComponent implements OnInit {
   }
 
   calculateTotal(): void {
-    this.total = 0; // Initialize total to zero before calculating the sum
+    this.total = 0; 
 
     for (const item of this.list) {
       this.total += item.Price;
@@ -27,7 +28,7 @@ export class CartComponent implements OnInit {
   }
 
   CheckOutDetails(){
-    
+
   }
 
 }
