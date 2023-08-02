@@ -85,3 +85,42 @@ h2{
     cursor: pointer;
 }
 }
+
+@media(width < 1500px){
+    .others{
+        padding-left: 2em;
+    }
+}
+@media(width < 850px){
+    .others{
+        padding-left: 0em;
+        max-width: 40%;
+        h2{
+            margin-left: 2em;
+        }
+    }
+    .container{
+        h2{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+        max-width: 60%;
+        
+    }
+    .product{
+        margin-left: 2em;
+    }
+    
+}
+@media(width < 520px){
+    .product{
+        margin-left: 0em;
+    }
+    .others{
+        h2{
+            margin-left: 1em;
+        }
+    }
+}

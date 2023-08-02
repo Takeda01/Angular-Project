@@ -58,3 +58,13 @@ max-height: 350px;
         }
     }
   }
+  @media(width < 1330px){
+    .container{
+        gap: 2em;
+    }
+  }
+  @media(width < 690px){
+    .container{
+        gap: 0em;
+    }
+  }
