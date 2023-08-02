@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from '../../types/subject';
 import { CartService } from '../cart.service';
+import { UserService } from 'src/app/user/user.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class CartComponent implements OnInit {
   list: Subject[] = [];
   total: number = 0; 
 
-  constructor(private cartService: CartService) {}
+  constructor(private cartService: CartService, private userService: UserService) {}
 
   ngOnInit(): void {
     this.list = this.cartService.list;
@@ -28,7 +29,7 @@ export class CartComponent implements OnInit {
   }
 
   CheckOutDetails(){
-
+this.userService.history = this.list
   }
 
 }

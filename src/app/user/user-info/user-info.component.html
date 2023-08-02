@@ -7,12 +7,19 @@
     <div class="user-details">
       <h2>{{CurrentPatient?.Name }}</h2>
       <p>{{CurrentPatient?.email }}</p>
-      <p>PROMO CODE: "STRENGTH5"</p>
+   
     </div>
   </div>
   <div class="date-info">
-    <p>Date: July 31, 2023</p>
-    <p>Orders made: 2</p>
-    <button (click)="OnLogOut()">LogOut</button>
+ <section>
+  <h2>Purchase histroy:</h2>
+  <div *ngFor="let item of list">
+    <p>
+      <span>{{item.Name}} : </span>
+      <span>{{item.Price}} € </span>
+    </p>
+  </div>
+ </section >
+    <button class="b" (click)="OnLogOut()">LogOut</button>
   </div>
 </div>

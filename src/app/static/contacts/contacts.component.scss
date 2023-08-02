@@ -94,3 +94,15 @@ fieldset{
     padding-top: 1em;
     padding-left: 1em;
 }
+
+@media(width< 600px){
+    .container{
+        grid-template-columns: 1fr;
+        margin-left: 0.4em;
+        width: 100%;
+        fieldset{
+            width: auto;
+            overflow: hidden;
+        }
+    }
+}

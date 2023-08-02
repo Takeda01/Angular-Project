@@ -94,3 +94,16 @@ input{
 .red{
     color: rgb(232, 244, 9)
 }
+@media(width< 800px){
+    .container{
+        margin-bottom: 5em;
+    }
+    form{
+        min-width: 60%;
+    }
+}
+@media(width < 1000px){
+    .container{
+        margin-bottom: 5em;
+    }
+}

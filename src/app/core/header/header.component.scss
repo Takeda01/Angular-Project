@@ -93,6 +93,8 @@ svg:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left: 0em;
+        padding-bottom: 0em;
         .home{
             text-align: center;
            
@@ -106,5 +108,32 @@ svg:hover{
            align-self: flex-end;
            }
     }
+}
+@media(width < 500px){
+
+    nav{
+        display: grid;
+        grid-template-areas:
+        "home home"
+        "head auth" ;
+    
+    
+    }
+
+.head{
+    flex-direction: column;
+    grid-area: head;
+}
+.auth{
+    grid-area: auth;
+    display: flex;
+}
+.home{
+    width: 100%;
+    max-height: 50px;
+    grid-area: "home";
+    margin-left: 1em;
+}
+
 }
 

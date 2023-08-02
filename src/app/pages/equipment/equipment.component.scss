@@ -48,3 +48,13 @@ max-height: 350px;
   .card:hover{
       transform: scale(1.1);
   }
+
+  @media(width<  500px){
+    
+    .container{
+        flex-direction: column;
+        .card{
+            max-width: 90%;
+        }
+    }
+  }

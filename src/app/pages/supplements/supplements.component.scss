@@ -48,3 +48,14 @@ img{
 .card:hover{
     transform: scale(1.1);
 }
+
+@media(width<  500px){
+    
+    .container{
+        flex-direction: column;
+        width: 100%;
+        .card{
+            max-width: 90%;
+        }
+    }
+  }

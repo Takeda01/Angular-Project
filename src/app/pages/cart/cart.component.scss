@@ -59,3 +59,12 @@
   .promo{
     margin-top: 4em;
   }
+
+  @media(width < 580px){
+    .check button{
+      padding: 0.5em;
+      width: 40%;
+  
+      
+    }
+  }

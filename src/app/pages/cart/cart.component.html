@@ -13,11 +13,11 @@
     </div>
     <div class="cart-total">
       <span>Total:</span>
-      <span class="total-amount">{{total}} €</span>
+      <span class="total-amount">{{total.toFixed(2)}} €</span>
     </div>
    
 
     <div class="check">
-      <button routerLink="/checkout">Check Out</button>
+      <button (click)="CheckOutDetails()" routerLink="/checkout">Check Out</button>
     </div>
   </div>
