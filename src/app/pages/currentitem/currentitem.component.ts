@@ -3,6 +3,7 @@ import { Supplement } from 'src/app/types/supplement';
 import { ApiService } from '../api.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CartService } from '../cart.service';
+import { RandomiseService } from '../randomise.service';
 
 @Component({
   selector: 'app-currentitem',
@@ -11,12 +12,15 @@ import { CartService } from '../cart.service';
 })
 export class CurrentitemComponent implements OnInit{
 item: Supplement | undefined
+Added: boolean = false
 
 
 
 
+sequence: number[] = this.Randomise.generateSequence()
 
-constructor(private api: ApiService, private activeRoute: ActivatedRoute, private cartService: CartService, private router: Router) {
+
+constructor(private api: ApiService, private activeRoute: ActivatedRoute, private cartService: CartService, private router: Router,private Randomise: RandomiseService) {
  
   
 }
@@ -29,7 +33,7 @@ products: Supplement[] = []
            
       
             
-            this.products = filteredArray.slice(1,5)
+            this.products = filteredArray.slice(this.sequence[0],this.sequence[0] + 4)
           }))
   }
 
@@ -45,6 +49,7 @@ return `../../../assets/EquipmentPhotos/equipment${item.EqId}.jpg`
 
 Add(item:Supplement){
 this.cartService.AddItem(item)
+this.Added = true
 }
 Nav(id:string){
   this.router.navigate([`/equipment/${id}`])

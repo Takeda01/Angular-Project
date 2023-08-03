@@ -59,3 +59,48 @@ img{
         }
     }
   }
+  @media(width<  850px){
+    
+    .container{
+        flex-direction: column;
+        width: 100%;
+        .card{
+            max-width: 100%;
+          
+        }
+       
+    }
+  }
+    @media(width < 400px){
+        .card{
+            margin-left: 0em;
+        }
+        .container{
+            margin-left: 0em;
+        }
+    }
+    @media(width < 1280px){
+        .container{
+          
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           margin-left: 4em;
+        }
+    }
+    @media(width < 900px){
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    @media(width < 400px){
+        .card{
+            margin-left: 0em;
+        }
+        .container{
+            max-width: 80%;
+            margin-left: 2em;
+        }
+    }
+  

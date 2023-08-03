@@ -9,6 +9,9 @@
         <p>{{item.grams}}g</p>
         <p>Price: {{item.Price}} €</p>
         <button (click)="Add(item)">Add to Cart</button>
+        <div *ngIf="Added">
+            <p class="green"> Added to cart !</p>  
+        </div>
        
     </div>
 </div>

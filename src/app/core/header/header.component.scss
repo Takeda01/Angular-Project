@@ -85,15 +85,12 @@ svg:hover{
     cursor: pointer;
     border: none;
 }
-.profile{
-   
-}
 @media(width < 950px){
     nav{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 0em;
+        padding-left: 1em;
         padding-bottom: 0em;
         .home{
             text-align: center;

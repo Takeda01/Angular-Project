@@ -7,6 +7,9 @@
         <p>Material: {{item.EqMaterial}}</p>
         <p>Price: {{item.EqPrice}} €</p>
         <button (click)="Add(item)">Add to Cart</button>
+        <div *ngIf="Added">
+            <p class="green"> Added to cart !</p>  
+        </div>
     </div>
 
     <div class="others">
