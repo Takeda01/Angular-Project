@@ -3,6 +3,7 @@
     <div class="item-details container" *ngIf="item">
         <img [src]="Photo(item)" alt="Product Image">
         <h2>{{item.EqName}}</h2>
+        <p class="type">{{item.Eqprice}}</p>
         <p>Brand: {{item.EqBrand}}</p>
         <p>Material: {{item.EqMaterial}}</p>
         <p>Price: {{item.EqPrice}} €</p>

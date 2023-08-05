@@ -10,6 +10,6 @@ export interface Supplement{
     EqName:string,
     EqPrice: number,
     EqMaterial: string,
-    EqType: string,
+    Eqprice: string,
     EqBrand: string
 }

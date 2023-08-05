@@ -91,7 +91,10 @@ h2{
 .green{
     color: green;
 }
-@media(width < 1500px){
+.type{
+    font-weight: 800;
+}
+@media( 850 < width < 1500px){
     .others{
         padding-left: 2em;
     }

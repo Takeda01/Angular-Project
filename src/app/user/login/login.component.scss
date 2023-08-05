@@ -1,19 +1,21 @@
 .container {
     background-color: rgb(241, 251, 251);
-    margin-top: 3em;
-    margin-bottom: 10em;
+    margin-top: 8em;
+    margin-bottom: 15em;
   }
   
   form.login {
-    width: 40%;
+    width: 20%;
     margin: 0 auto;
     text-align: center;
+    
   }
   
   .login fieldset {
     border-radius: 0.4em;
     padding: 0.8em;
     background-color: #007bff;
+    padding-bottom: 2em;
   }
   
   .login h2 {
@@ -93,5 +95,15 @@
   form{
     max-width: 40%;
 }
+}
+@media(width < 1870px){
+  form.login{
+width: 30%;
+  }
+}
+@media(width < 1000px){
+  form.login{
+    width: 40%;
+      }
 }
   
