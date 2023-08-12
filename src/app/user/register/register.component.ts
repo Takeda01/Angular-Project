@@ -58,8 +58,7 @@ name: string = '';
   }
 
   isValidEmail(email: string): boolean {
-    // You can use a regular expression to validate the email format
-    // For example, the following regular expression checks for a basic email format
+  
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 

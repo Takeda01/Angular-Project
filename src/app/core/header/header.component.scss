@@ -31,7 +31,7 @@ nav{
     padding-top: 1em;
     padding-bottom: 1em;
     border-bottom: 2px solid black;
-    padding-left: 1em;
+    padding-left: 1.4em;
     background-color: rgb(227, 229, 231);
     
     
@@ -64,9 +64,8 @@ nav{
 .home{
     padding: 0.3em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:large ;
-    font-weight: 600;
-    box-shadow: -3px 7px 14px -4px rgba(0,0,0,0.75);
+    font-size:1.6em ;
+    font-weight: 900;
 }
 svg{
     max-width: 50px;
@@ -85,6 +84,9 @@ svg:hover{
     cursor: pointer;
     border: none;
 }
+.head{
+    margin-left: 15%;
+}
 @media(width < 950px){
     nav{
         display: flex;
@@ -94,11 +96,13 @@ svg:hover{
         padding-bottom: 0em;
         .home{
             text-align: center;
+            
            
         }
         .head{
             display: flex;
             justify-content: space-between;
+           
             
            }
            .auth{
@@ -133,4 +137,15 @@ svg:hover{
 }
 
 }
+@media(width < 1230px){
+    .head{
+        margin-left: 10%;
+    }
+}
+@media(width < 1110px){
+    .head{
+        margin-left: 0%;
+    }
+}
+
 

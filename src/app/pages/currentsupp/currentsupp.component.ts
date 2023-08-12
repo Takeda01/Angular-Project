@@ -27,6 +27,7 @@ sequence: number[] = this.Randomise.generateSequence()
 
 ngOnInit(): void {
   this.FetchItem()
+  this.Added = false
   this.api.GetSupplements().subscribe((supplemets =>
     {
       const filteredArray = supplemets.filter(item => item.Name); 

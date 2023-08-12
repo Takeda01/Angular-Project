@@ -27,6 +27,7 @@ constructor(private api: ApiService, private activeRoute: ActivatedRoute, privat
 products: Supplement[] = []
   ngOnInit(): void {
     this.FetchItem()
+    this.Added = false
     this.api.GetSupplements().subscribe((supplemets =>
       {
         const filteredArray = supplemets.filter(item => item.EqName); 

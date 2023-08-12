@@ -83,5 +83,5 @@ describe('EquipmentComponent', () => {
     expect(photoUrl).toEqual(`../../../assets/EquipmentPhotos/equipment${mockEquipment.EqId}.jpg`);
   });
 
-  // You can add more test cases as needed.
+ 
 });
